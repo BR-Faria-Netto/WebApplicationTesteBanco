@@ -21,7 +21,10 @@ app.UseHttpsRedirection();
 
 app.UseAuthorization();
 
+
 app.MapMethods( ListaRotas.Parametro, ListaRotas.Metodo, ListaRotas.Func);
+
+app.MapMethods( AcharRota.Parametro, AcharRota.Metodo, AcharRota.Func);
 
 app.MapMethods( MelhorRota.Parametro, MelhorRota.Metodo, MelhorRota.Func);
 
